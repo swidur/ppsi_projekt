@@ -1,149 +1,81 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Wartsztat samochodowy Świdurski & Świdurski</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- stylesheet imports -->
 	<link rel="stylesheet" href="style/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/styles.css">
 	<link rel="icon" type="image/png" href="images/icons/favicon.png">
-	<script src="js/jquery-3.5.1.min.js" ></script>
-	<script src="js/bootstrap.bundle.js" ></script>
+	<!-- scripts import -->
+	<script src="js/jquery-3.5.1.min.js" async></script>
+	<script src="js/bootstrap.bundle.js" async></script>
 </head>
-<body>
 
+<body>
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top  bg-dark">
 		<a class="navbar-brand text-black" href="#"><img src="images/logo.png" alt="Logo"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		  </button>
+		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <ul class="navbar-nav mr-auto">			
-			<li class="nav-item">
-				<a class="nav-link" href="#about">O warsztacie</a>
-			</li>
-
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Oferta
-			  </a>
-			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item my-2" href="#carservice"><img class="icon" src="images/icons/car.svg"> Serwis aut osobobowych</a>
-				<a class="dropdown-item" href="#painting"><img class="icon" src="images/icons/brush.svg"/>	Lakierowanie</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#adac"> <img class="icon" src="images/icons/angular.svg"/>	ADAC Pomoc drogowa</a>
-			  </div>
-			</li>
+			<ul class="navbar-nav mr-auto">
 				
-			<li class="nav-item">
-				<a class="nav-link" href="#opinions">Opinie klientów</a>
-			</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Kontakt</a>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
-	  <!-- /navbar -->
-	  
-		<!-- jumbotron -->
-		<section class="bg-gray">
-			
-			<div class="jumbotron-height">
-				<div class="jumbotron">
-					<h1 class="display-4 text-center text-white">Świdurski & Świdurski</h1>
-					<p class="text-xl-center text-white">Jeżeli szukasz fachowców, którzy pomogą Ci rozwiązać każdy problem dotyczący Twojego auta, to dobrze trafiłeś!</p>
-					<p class="lead text-center">
-						<a class="btn btn-warning btn-lg" href="#carservice" role="button">Zapoznaj sie z naszą ofertą!</a>
-					</p>
+				<li class="nav-item">
+					<a class="nav-link" href="#opinions">Opinie klientów</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#about">O warsztacie</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Oferta
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item my-2" href="#carservice"><img class="icon" src="images/icons/car.svg"> Serwis aut
+							osobobowych</a>
+						<a class="dropdown-item" href="#painting"><img class="icon" src="images/icons/brush.svg" /> Lakierowanie</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#adac"> <img class="icon" src="images/icons/angular.svg" /> ADAC Pomoc
+							drogowa</a>
 					</div>
-				</div>
-		</section>
-	  <!-- /jumbotron -->
+				</li>
 
-	<!-- about -->
-	<section class="bg-gray">
-		<div class="section-pad"  id="about"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-12">
-					<h2>O warsztacie</h2>
-				</div>
-			</div>
-			<div class="row">
-				<article class="col-12 col-md-4">
-					<img src="images/tradition_aarron-norcott-gD1HU_XU5aE-unsplash.jpg" alt="Tradycja">
-					<h3>Tradycja</h3>
-					<p>Z Świdurski&Świdurski masz pewność, że Twoje auto znajduje się w dobrych rękach. Od 3 pokoleń naprawiamy auta osobowe, mototcykle i skutery śnieżne!</p>
-				</article>
-	
-				<article class="col-12 col-md-4">
-					<img src="images/modern_blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" alt="Nowoczesność">
-					<h3>Nowoczesność</h3>
-					<p>Dzięki zastosowaniu nowoczesnych techologii oraz ciągłemu doskonaleniu umiejętności naszych pracowników, możesz być pewien, że naprawimy nawet najnowsze samochody!</p>
-				</article>
-	
-				<article class="col-12 col-md-4">
-					<img src="images/experience_tory-bishop-vY-WNTNfXR0-unsplash.jpg" alt="Doświadczenie">
-					<h3>Doświadczenie</h3>
-					<p>Przez nasz warsztat przewija sie nawet do 10 aut dziennie i tak od 30 lat! Dzięki temu bardzo szybko nabraliśmy doświadczenia, które jest tak potrzebne, by sprawnie i rozważnie naprawiać auta!</p>
-				</article>
-			</div>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Kontakt</a>
+				</li>
+			</ul>
 		</div>
-		
-	</section>
-	<!-- /about -->
+	</nav>
+	<!-- /navbar -->
 
-	<!-- offer -->
+	<!-- jumbotron -->
 	<section class="bg-gray">
-		<div class="section-pad" id="carservice"></div>
-
-		<div class="container">
-			<div class="row">
-				<article class="col-12 col-md-12">
-					<h2>Serwis samochodów osobowych</h2>
-					<img src="images/carservice_tim-mossholder-V37iTrYZz2E-unsplash.jpg" alt="Serwis samochodów osobowych">
-					<p>Dzięki wysoko wykwalifikowanym specjalistom wykonujemy naprawy samochodów do 3,5 t wszystkich marek. W naszym serwisie zawsze możecie liczyć na najwyższy standard obsługi i jakości usług. Zapraszamy na serwis eksploatacyjny jak i naprawy powypadkowe i usterek.</p>
-				</article>
+		<div class="jumbotron-height">
+			<div class="jumbotron">
+				<h1 class="display-4 text-center text-white">Świdurski & Świdurski</h1>
+				<p class="text-xl-center text-white">Jeżeli szukasz fachowców, którzy pomogą Ci rozwiązać każdy problem z Twoim
+					autem, to dobrze trafiłeś!</p>
+				<p class="lead text-center">
+					<a class="btn btn-warning btn-lg" href="#carservice" role="button">Zapoznaj sie z naszą ofertą!</a>
+				</p>
 			</div>
 		</div>
 	</section>
-
-	<section class="bg-gray">
-		<div class="section-pad" id="painting" ></div>
-
-		<div class="container">
-			<div class="row">
-				<article class="col-12 col-md-12">
-					<h2>Lakierowanie pojazdów</h2>
-					<img src="images/wreck_michael-jin-ipHlSSaC3vk-unsplash.jpg" alt="Lakierowanie pojazdów">
-					<p>Miałeś stłuczkę? A może znudził Ci sie kolor twojego auta? Nie ważne dlaczego, nasi lakiernicy z przyjemnością podejmą się wyzwania!</p>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<section class="bg-gray">
-		<div class="section-pad"  id="adac"></div>
-
-		<div class="container">
-			<div class="row">
-				<article class="col-12 col-md-12">
-					<h2>Holowanie pojazdów z ADAC</h2>
-					<img src="images/adac_gettyimages-1177212344-0c05996bc.webp" alt="Lakierowanie pojazdów">
-					<p>Awaria w trasie? Nic strasznego! Jesteśmy partnerem Allgemeiner Deutscher Automobil-Club, znanego jako ADAC! Dzieki temu jesteśmy w stanie zaoferować Państwu szeroki wachlarz usług związancyh z holowaniem, autami zastępczymi czy ekspresową wymianą szyb!</p>
-				</article>
-			</div>
-		</div>
-	</section>
-	<!-- /offer -->
+	<!-- /jumbotron -->
 
 	<!-- client opinions -->
 	<section class="bg-gray">
-		<div class="section-pad" id="opinions" ></div>
+		<div class="section-pad" id="opinions"></div>
 
 		<div class="container">
 			<div class="row">
@@ -155,36 +87,39 @@
 				<div class="col-12">
 					<div id="carouselContent" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
-							
+
 							<div class="carousel-item container active">
 								<div class="row">
 									<div class="col-1"></div>
 
-									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/women/43.jpg" alt="User1"></div>
+									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/women/43.jpg"
+											alt="User1"></div>
 									<div class="col-6 col-md-7 col-lg-6">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked" ></span>
-										<p>Polecam! Serwisuje tu auta od lat i nigdy się nie zawiodłam, ostatnim razem poleciłam serwis znajomemu, który nie mógł naprawić skomplikowanej usterki silnika i wszystko ogarnęli jak należy!
+										<span class="fa fa-star checked"></span>
+										<p>Polecam! Serwisuje tu auta od lat i nigdy się nie zawiodłam, ostatnim razem poleciłam serwis
+											znajomemu, który nie mógł naprawić skomplikowanej usterki silnika i wszystko ogarnęli jak należy!
 										</p>
 									</div>
 									<div class="col-1"></div>
 								</div>
 							</div>
-														
+
 							<div class="carousel-item container ">
 								<div class="row">
 									<div class="col-1"></div>
 
-									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/81.jpg" alt="User2"></div>
+									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/81.jpg"
+											alt="User2"></div>
 									<div class="col-6 col-md-7 col-lg-6">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked" ></span>
+										<span class="fa fa-star checked"></span>
 										<p>Efektywna naprawa, precyzyjnie opisany problem i sposób rozwiązania.
 											Rzeczowa i konkretna komunikacja. Bardzo dobry kontakt telefoniczny.
 											Czyste otoczenie potwierdza też jakość obsługi.
@@ -193,41 +128,45 @@
 									<div class="col-1"></div>
 								</div>
 							</div>
-																					
+
 							<div class="carousel-item container ">
 								<div class="row">
 									<div class="col-1"></div>
 
-									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User3"></div>
+									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/62.jpg"
+											alt="User3"></div>
 									<div class="col-6 col-md-7 col-lg-6">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked" ></span>
-										<p>Wymiana tylnego zawieszenia (czarna insignia 2.0 turbo benz.) przebiegła szybko i profesjonalnie. Skorzystałem z Ich usług pierwszy raz i się nie zawiodłem. Prawdopodobnie tam wrócę.</p>
+										<span class="fa fa-star checked"></span>
+										<p>Wymiana tylnego zawieszenia (czarna insignia 2.0 turbo benz.) przebiegła szybko i profesjonalnie.
+											Skorzystałem z Ich usług pierwszy raz i się nie zawiodłem. Prawdopodobnie tam wrócę.</p>
 									</div>
 									<div class="col-1"></div>
 								</div>
 							</div>
-																					
+
 							<div class="carousel-item container ">
 								<div class="row">
 									<div class="col-1"></div>
 
-									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/83.jpg" alt="User4"></div>
+									<div class="col-4 col-md-3 col-lg-2"><img src="https://randomuser.me/api/portraits/men/83.jpg"
+											alt="User4"></div>
 									<div class="col-6 col-md-7 col-lg-6">
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
 										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star " ></span>
-										<p>Szybka diagnoza usterki ogrzewania foteli, jednak nie zajmują się naprawą/wymianą mat grzewczych.</p>
+										<span class="fa fa-star "></span>
+										<p>Szybka diagnoza usterki ogrzewania foteli, jednak nie zajmują się naprawą/wymianą mat grzewczych.
+										</p>
 									</div>
 									<div class="col-1"></div>
 								</div>
 							</div>
-							
+
 						</div>
 						<a class="carousel-control-prev text-dark" href="#carouselContent" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -241,60 +180,143 @@
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
 	<!-- /client opinions -->
 
-
-
-	<!--formularz i kontakt-->
-    <section class="contact bg-gray pb-5">
-			<div class="section-pad" id="contact"></div>
-
-    <div class="container">
-		<div class="row my-5">
-				<div class="col-6">
-					<h2>Skontaktuj się z nami!</h2>
-				</div>
-
-				<div class="col-6">
-					<h2>Znajdź nas</h2>
+	<!-- about 3 columns-->
+	<section class="bg-gray">
+		<div class="section-pad" id="about"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<h2>O warsztacie</h2>
 				</div>
 			</div>
+			<div class="row">
+				<article class="col-12 col-md-4">
+					<img src="images/tradition_aarron-norcott-gD1HU_XU5aE-unsplash.jpg" alt="Tradycja">
+					<h3>Tradycja</h3>
+					<p>Z Świdurski&Świdurski masz pewność, że Twoje auto znajduje się w dobrych rękach. Od 3 pokoleń naprawiamy
+						auta osobowe, mototcykle i skutery śnieżne!</p>
+				</article>
 
-           <div class="row">
-            <div class="col-12 col-md-6">
-                <form action="#" method="POST" class="login" >
-                    <label for="fullName"><strong>Imię i nazwisko</strong></label><br>
-                    <input type="text" name="fullname" id="fullName"><br>
+				<article class="col-12 col-md-4">
+					<img src="images/modern_blaz-erzetic-g5f0BJq-FRs-unsplash.jpg" alt="Nowoczesność">
+					<h3>Nowoczesność</h3>
+					<p>Dzięki zastosowaniu nowoczesnych techologii oraz ciągłemu doskonaleniu umiejętności naszych pracowników,
+						możesz być pewien, że naprawimy nawet najnowsze samochody!</p>
+				</article>
 
-                    <label for="email"><strong>Email zwrotny</strong></label><br>
-                    <input type="email" name="email" id="email"><br>
+				<article class="col-12 col-md-4">
+					<img src="images/experience_tory-bishop-vY-WNTNfXR0-unsplash.jpg" alt="Doświadczenie">
+					<h3>Doświadczenie</h3>
+					<p>Przez nasz warsztat przewija sie nawet do 10 aut dziennie i tak od 30 lat! Dzięki temu bardzo szybko
+						nabraliśmy doświadczenia, które jest tak potrzebne, by sprawnie i rozważnie naprawiać auta!</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- /about -->
 
-                    <label for="password"><strong>Twoja wiadomość:</strong></label><br>
-                    <textarea type="text" name="message" id="message"> </textarea><br>
+	<!-- offer -->
+	<section class="bg-gray">
+		<div class="section-pad" id="carservice"></div>
+		<div class="container">
+			<div class="row">
+				<article class="col-12 col-md-12">
+					<h2>Serwis samochodów osobowych</h2>
+					<img src="images/carservice_tim-mossholder-V37iTrYZz2E-unsplash.jpg" alt="Serwis samochodów osobowych">
+					<p>Dzięki wysoko wykwalifikowanym specjalistom wykonujemy naprawy samochodów do 3,5 t wszystkich marek. W
+						naszym serwisie zawsze możecie liczyć na najwyższy standard obsługi i jakości usług. Zapraszamy na serwis
+						eksploatacyjny jak i naprawy powypadkowe i usterek.</p>
+				</article>
+			</div>
+		</div>
+	</section>
 
-                    <button class="btn btn-warning" type="submit" id="send"><strong>Wyślij!</strong></button>
-                </form>
-            </div>
+	<section class="bg-gray">
+		<div class="section-pad" id="painting"></div>
 
-            <div class="col-12 col-md-6" >
-				<p class="text-dark">Czynne od poniedziałku do soboty: 7.00 - 22.00</p>
-				<p class="text-dark">tel. 777 444 333, tel. 888 444 333</p>
-				<a class="text-dark" href="https://www.openstreetmap.org/#map=19/52.40401/16.92169">Powstańców Wielkopolskich 5, 61-895 Poznań</a>
-                <iframe class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=16.92001283168793%2C52.40325345412213%2C16.923360228538517%2C52.40476384040771&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
-            </div>
-		   </div>
-        </div>
-    </section>
+		<div class="container">
+			<div class="row">
+				<article class="col-12 col-md-12">
+					<h2>Lakierowanie pojazdów</h2>
+					<img src="images/wreck_michael-jin-ipHlSSaC3vk-unsplash.jpg" alt="Lakierowanie pojazdów">
+					<p>Miałeś stłuczkę? A może znudził Ci się kolor Twojego auta? Nie ważne dlaczego, nasi lakiernicy z
+						przyjemnością podejmą się wyzwania!</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-gray">
+		<div class="section-pad" id="adac"></div>
+		<div class="container">
+			<div class="row">
+				<article class="col-12 col-md-12">
+					<h2>Holowanie pojazdów z ADAC</h2>
+					<img src="images/adac.png" alt="Lakierowanie pojazdów">
+					<p>Awaria w trasie? Nic strasznego! Jesteśmy partnerem Allgemeiner Deutscher Automobil-Club, znanego jako
+						ADAC! Dzieki temu jesteśmy w stanie zaoferować Państwu szeroki wachlarz usług związancyh z holowaniem,
+						autami zastępczymi czy ekspresową wymianą szyb!</p>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- /offer -->
+
+	<!--formularz i kontakt-->
+	<section class="contact bg-gray pb-5">
+		<div class="section-pad" id="contact"></div>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h2>Skontaktuj się z nami</h2>
+					<form action="#" method="POST" class="login">
+						<label for="fullName"><strong>Imię i nazwisko</strong></label><br>
+						<input type="text" name="fullname" id="fullName"><br>
+
+						<label for="text"><strong>Telefon zwrotny</strong></label><br>
+						<input type="text" name="text" id="text"><br>
+
+						<label for="password"><strong>Twoja wiadomość:</strong></label><br>
+						<textarea type="text" name="message" id="message"> </textarea><br>
+
+						<button class="btn btn-warning" type="submit" id="send"><strong>Wyślij!</strong></button>
+					</form>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<h2>Znajdź nas</h2>
+					<p class="text-dark">Czynne od poniedziałku do soboty: 7.00 - 22.00<br>
+						tel. <a href="tel:123-456-7890">694 694 694</a>, tel. <a href="tel:123-456-7890">694 694 695</a><br>
+						email: <a href="mailto:warsztat@swidurskiswidurski.pl">warsztat@swidurskiswidurski.pl</a><br>
+						Powstańców Wielkopolskich 5, 61-895 Poznań</p>
+
+					<div class="map-responsive">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.1439877315565!2d16.919813816170624!3d52.4040665797925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b30ae160403%3A0xe39903b3385ec3d1!2sPowsta%C5%84c%C3%B3w%20Wielkopolskich%205%2C%2061-891%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1605731359113!5m2!1spl!2spl"
+							width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+							tabindex="0"></iframe><br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<!--footer-->
-    <footer class="site-footer bg-dark">
-        <div class="container">
+	<footer class="site-footer bg-dark">
+		<div class="container">
 			<div class="row">
 				<div class="col-6 text-left">Warsztat samochodowy Świdurski & Świdurski </div>
-				<div class="col-6 text-right"><a class="text-warning" href="https://github.com/swidur">©Dawid Świdurski</a></div></div>
-        </div>
-    </footer>
+				<div class="col-6 text-right"><a class="text-warning" href="https://github.com/swidur">©Dawid Świdurski</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
+
 </html>
